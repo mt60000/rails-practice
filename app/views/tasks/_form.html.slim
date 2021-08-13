@@ -1,0 +1,8 @@
+= form_with model: task, local: true do |f|
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: 'form-control my-2', id: 'task-name'
+  .form-group
+    = f.label :description
+    = f.text_area :description, class: 'form-control mt-2', id: 'task-description'
+  = f.submit nil, class: 'btn btn-primary mt-3'
